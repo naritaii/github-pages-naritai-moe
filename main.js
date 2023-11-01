@@ -1,4 +1,5 @@
-    // Use JavaScript to load and insert the header
+// Function to load the header
+function loadHeader() {
     const headerContainer = document.getElementById("header-placeholder");
     const headerURL = "header.html";
 
@@ -16,3 +17,7 @@
                 }
             });
         });
+}
+
+// Load the header when the page loads
+window.addEventListener("load", loadHeader);
