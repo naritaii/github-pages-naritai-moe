@@ -8,21 +8,20 @@
 /* Add styles to the body and header */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    overscroll-behavior: auto black;
+    background-color: #fff1f6; /* Cream background */
+    color: #25000c; /* Dark gray text on cream background for readability */
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #FF75A1; 
+    color: #fff1f6; /* Cream text on pink background */
     text-align: center;
     padding: 20px;
 }
 
 .current-page {
-    font-weight: bold; /* Highlight text for the current page */
-    color: #FF5733;
+    font-weight: bold;
+    color: #25000c; /* Dark gray text for readability on pink background */
 }
 
 /* Style the navigation menu */
@@ -37,7 +36,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #fff1f6; /* Cream text on pink background */
     font-weight: bold;
     font-family: 'MainFont', sans-serif;
 }
@@ -48,7 +47,7 @@ nav a {
     padding: 80px 0;
     background-image: url('background.jpg'); /* Add a background image */
     background-size: cover;
-    color: #ffff;
+    color: #fff1f6; /* Cream text on pink background */
 }
 
 .title {
@@ -63,8 +62,8 @@ nav a {
 }
 
 .cta-button {
-    background-color: #ff6600; /* Vibrant orange theme */
-    color: #fff;
+    background-color: #FF75A1; 
+    color: #fff1f6; /* Cream text on pink background */
     padding: 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -74,8 +73,8 @@ nav a {
 
 /* Style the other sections */
 #about, #portfolio, #contact, #blog {
-    background-color: #fff; /* Background color for these sections */
-    padding: 40px; /* Padding for these sections */
+    background-color: #fff1f6; /* Cream background */
+    padding: 40px;
 }
 
 #about h2, #portfolio h2, #contact h2, #blog h2 {
@@ -86,13 +85,13 @@ nav a {
 #about p, #portfolio p, #contact p, #blog p {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
-    color: #333;
+    color: #25000c; /* Dark gray text on cream background for readability */
 }
 
 /* Style the footer */
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #FF75A1;
+    color: #fff1f6; /* Cream text on pink background */
     text-align: center;
     padding: 10px;
     font-size: 12px;
@@ -107,9 +106,12 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000; /* Set the color for the overscroll effect */
-    pointer-events: none; /* Allows underlying content to be interactive */
-    z-index: -1; /* Places it behind the section content */
+    background-color: #FF75A1;
+    pointer-events: none;
+    z-index: -1;
 }
 
-/* Responsive design: adapt styles for smaller screens */
+/* Adapt styles for smaller screens */
+@media (max-width: 768px) {
+    /* Add responsive styles here */
+}
