@@ -19,6 +19,12 @@ header {
     padding: 20px;
 }
 
+.current-page {
+    font-weight: bold; /* Example: Make the text bold for the current page */
+    color: #FF5733;
+}
+
+
 /* Style the navigation menu */
 nav ul {
     list-style: none;
