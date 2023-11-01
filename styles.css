@@ -24,7 +24,6 @@ header {
     color: #FF5733;
 }
 
-
 /* Style the navigation menu */
 nav ul {
     list-style: none;
@@ -42,6 +41,7 @@ nav a {
     font-family: 'MainFont', sans-serif;
 }
 
+/* Style the banner section */
 #banner {
     text-align: center;
     padding: 80px 0;
@@ -57,8 +57,8 @@ nav a {
 
 .tagline {
     font-family: 'MainFont', sans-serif;
-    font-size: 24px;  
-    padding: 40px;
+    font-size: 24px;
+    padding: 20px;
 }
 
 .cta-button {
@@ -71,8 +71,30 @@ nav a {
     font-family: 'MainFont', sans-serif;
 }
 
-/* Style the other sections as desired */
-/* Add styles for #about, #portfolio, #contact, and footer */
+/* Style the other sections */
+#about, #portfolio, #contact, #blog {
+    background-color: #fff; /* Background color for these sections */
+    padding: 40px; /* Padding for these sections */
+}
+
+#about h2, #portfolio h2, #contact h2, #blog h2 {
+    font-family: 'MainFont', sans-serif;
+    font-size: 28px;
+}
+
+#about p, #portfolio p, #contact p, #blog p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
 
 /* Responsive design: adapt styles for smaller screens */
-
