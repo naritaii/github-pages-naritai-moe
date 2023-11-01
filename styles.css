@@ -38,8 +38,11 @@ nav a {
 /* Style the hero section */
 #hero {
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
+
+/* You can adjust the values (100px) as needed to control the top and bottom padding. */
+
 
 #hero h1 {
     font-size: 36px;
