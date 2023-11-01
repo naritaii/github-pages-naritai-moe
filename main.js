@@ -15,7 +15,7 @@ function loadHeader() {
             const links = headerContainer.querySelectorAll("a");
             links.forEach(link => {
                 const linkHref = link.getAttribute("href").replace(/^\//, ''); // Remove the leading slash
-                if (linkHref === currentPage) {
+                if (linkHref === currentPage || (currentPage === '' && linkHref === 'index.html')) {
                     link.classList.add("current-page");
                 }
             });
