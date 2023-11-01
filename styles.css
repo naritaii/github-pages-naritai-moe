@@ -20,7 +20,7 @@ header {
 }
 
 .current-page {
-    font-weight: bold; /* Example: Make the text bold for the current page */
+    font-weight: bold; /* Highlight text for the current page */
     color: #FF5733;
 }
 
@@ -64,7 +64,7 @@ nav a {
 .cta-button {
     background-color: #ff6600; /* Vibrant anime-style orange color */
     color: #fff;
-    padding: 10px 20px;
+    padding: 40px 80px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
