@@ -8,11 +8,14 @@ function loadHeader() {
         .then(data => {
             headerContainer.innerHTML = data;
 
+            // Get the current page's URL
+            const currentPage = window.location.pathname.replace(/^\//, ''); // Remove the leading slash
+
             // Highlight the link for the current page
-            const currentPage = window.location.pathname;
             const links = headerContainer.querySelectorAll("a");
             links.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
+                const linkHref = link.getAttribute("href").replace(/^\//, ''); // Remove the leading slash
+                if (linkHref === currentPage) {
                     link.classList.add("current-page");
                 }
             });

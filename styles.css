@@ -39,7 +39,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-family: 'AnimeFont', sans-serif; /* You can add a custom anime-style font */
+    font-family: 'MainFont', sans-serif; /* You can add a custom anime-style font */
 }
 
 /* Style the hero section */
@@ -52,23 +52,23 @@ nav a {
 }
 
 .anime-title {
-    font-family: 'AnimeFont', sans-serif;
+    font-family: 'MainFont', sans-serif;
     font-size: 48px;
 }
 
 .anime-tagline {
-    font-family: 'AnimeFont', sans-serif;
+    font-family: 'MainFont', sans-serif;
     font-size: 24px;
 }
 
 .cta-button {
     background-color: #ff6600; /* Vibrant anime-style orange color */
     color: #fff;
-    padding: 40px 80px;
+    padding: 20px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    font-family: 'AnimeFont', sans-serif;
+    font-family: 'MainFont', sans-serif;
 }
 
 /* Style the other sections as desired */
