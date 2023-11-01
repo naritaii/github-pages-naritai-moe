@@ -10,6 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    overscroll-behavior: auto black;
 }
 
 header {
@@ -47,7 +48,7 @@ nav a {
     padding: 80px 0;
     background-image: url('background.jpg'); /* Add a background image */
     background-size: cover;
-    color: #000;
+    color: #ffff;
 }
 
 .title {
@@ -95,6 +96,20 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 12px;
+}
+
+/* Style the specific section for overscroll effect */
+#about::after, #portfolio::after, #contact::after, #blog::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000; /* Set the color for the overscroll effect */
+    pointer-events: none; /* Allows underlying content to be interactive */
+    z-index: -1; /* Places it behind the section content */
 }
 
 /* Responsive design: adapt styles for smaller screens */
