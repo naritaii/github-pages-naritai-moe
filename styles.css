@@ -6,18 +6,22 @@
 }
 
 /* Add styles to the body and header */
+/* Add styles to the body and header */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fff1f6; /* Cream background */
     color: #25000c; /* Dark gray text on cream background for readability */
+    padding: 0;
+    margin: 0;
 }
 
 header {
-    background-color: #FF75A1; 
+    background-color: #FF75A1;
     color: #fff1f6; /* Cream text on pink background */
     text-align: center;
     padding: 20px;
 }
+
 
 .current-page {
     font-weight: bold;
@@ -31,7 +35,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 20px;
+    margin: 20px;
 }
 
 nav a {
