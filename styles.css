@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Add styles to the body and header */
-/* Add styles to the body and header */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fff1f6; /* Cream background */
@@ -46,7 +44,6 @@ nav a {
     font-family: 'MainFont', sans-serif;
 }
 
-/* Style the banner section */
 #banner {
     text-align: center;
     padding: 80px 0;
@@ -93,7 +90,6 @@ nav a {
     color: #25000c; /* Dark gray text on cream background for readability */
 }
 
-/* Style the footer */
 footer {
     background-color: #FF75A1;
     color: #fff1f6; /* Cream text on pink background */
