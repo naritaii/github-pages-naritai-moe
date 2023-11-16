@@ -20,22 +20,37 @@ header {
     color: #fff1f6; /* Cream text on pink background */
     text-align: center;
     padding: 20px;
+    position: relative;
+}
+
+/* Adjust the .highlighter class */
+.highlighter {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    transform-origin: left;
+    border-radius: 2px; 
 }
 
 
 .current-page {
     font-weight: bold;
-    color: #25000c; /* Dark gray text for readability on pink background */
+    color: #25000c; /* Dark gray text on pink background */
 }
 
 /* Style the navigation menu */
 nav ul {
+    position: relative;
     list-style: none;
 }
 
-nav li {
-    display: inline;
-    margin: 20px;
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between links */
 }
 
 nav a {
