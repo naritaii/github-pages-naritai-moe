@@ -1,6 +1,11 @@
 async function loadHeaderContent() {
     const headerURL = "header.html";
+async function loadHeaderContent() {
+    const headerURL = "header.html";
     const headerContainer = document.getElementById("header-placeholder");
+
+    // Display a placeholder or loading state while fetching the content
+    headerContainer.innerHTML = '<div class="header-placeholder-skeleton"></div>';
 
     // Display a placeholder or loading state while fetching the content
     headerContainer.innerHTML = '<div class="header-placeholder-skeleton"></div>';
@@ -9,7 +14,22 @@ async function loadHeaderContent() {
         const response = await fetch(headerURL);
         const data = await response.text();
         headerContainer.innerHTML = data;
+    try {
+        const response = await fetch(headerURL);
+        const data = await response.text();
+        headerContainer.innerHTML = data;
 
+        // Highlight the current page link after the header content is loaded
+        highlightCurrentPageLink();
+    } catch (error) {
+        console.error('Error fetching header content:', error);
+        // Handle error or display a fallback content
+    }
+}
+
+function highlightCurrentPageLink() {
+    // Get the current page's URL
+    const currentPage = window.location.pathname.replace(/^\//, ''); // Remove the leading slash
         // Highlight the current page link after the header content is loaded
         highlightCurrentPageLink();
     } catch (error) {
