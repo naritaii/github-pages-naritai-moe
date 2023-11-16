@@ -23,20 +23,6 @@ header {
     position: relative;
 }
 
-/* Adjust the .highlighter class */
-.highlighter {
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 10%;
-    height: 2px;
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
-    transform-origin: left;
-    border-radius: 2px; 
-}
-
-
 .current-page {
     font-weight: bold;
     color: #25000c; /* Dark gray text on pink background */
